@@ -1,0 +1,76 @@
+:root{
+    --cards: aquamarine;
+    --neontext: rgb(186, 3, 186);
+}
+
+@font-face{
+    font-family: 'ChargeVector';
+    src: url(./vector/ChargeVector-PKldB.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ChargeVector', Verdana, Geneva, Tahoma, sans-serif;
+    src: url(./vector/ChargeVector-PKldB.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background:url(./WallpaperDog-17255344.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.title{
+    margin: 3%;
+    border: 2px solid white;
+    box-shadow: 0px 0px 7.5px 1px var(--cards) inset,
+    0px 0px 10px 1px var(--cards);
+    border-radius: 7.5px;
+    height: 75px;
+    width: 500px;
+    text-align: center;
+}
+
+.title h1, .title p{
+    color: rgb(215, 215, 215);;
+    text-shadow: 1px 1px 5px var(--neontext),
+    -1px -1px 5px var(--neontext),
+    -1px 1px 5px var(--neontext),
+    1px -1px 5px var(--neontext);
+}
+.title h1{
+    font-size: 30px;
+}
+.title p{
+    font-size: 20px;
+}
+.toplt{
+    width: 30px;
+    height: 2px;
+    transform: rotate(10deg);
+    transform: skew(20deg, 15deg);
+    transform-origin: 0px 1px;
+    background: linear-gradient(to right, white 10%, rgb(201, 201, 201));
+    box-shadow: 0px 5px 20px 2px var(--cards);
+    border-radius: 25px;
+}
+
+.toprt{
+    width: 30px;
+    height: 2px;
+    transform: rotate(10deg);
+    transform: skew(20deg, -15deg);
+    transform-origin: 20px -1275px;
+    background: linear-gradient(to left, white 10%, rgba(0,0,0,1) 75%);
+    box-shadow: 0px 5px 20px 2px var(--cards);
+    border-radius: 25px;
+}
